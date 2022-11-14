@@ -1,0 +1,18 @@
+export const Colors = {
+  primaryOrange: "#ffb132",
+  purple1: "#706df2",
+  purple2: "#b7b6f8",
+  gray1: "#363b4f",
+  gray2: "#6a6d76",
+  gray3: "#8d909a",
+  gray4: "#c6c7cc",
+  gray5: "#F3F3F6",
+  white: "#ffffff",
+  error: "rgba(229, 136, 101, 0.2)",
+  errorRed: "#e58865",
+  successGreen: "#6dc985",
+  warningOrange: "#f1c859",
+  disabledOrange: "#ffce7e",
+  disabledPurple: "#D2D1F6",
+  pressedOrange: "#fc971e",
+};
