@@ -6,3 +6,5 @@ How to run this project on your Device
 4) download and install Expo Go application
 5) scan QR code from console with your Device
 
+Make sure NodeJS installed on your PC
+
