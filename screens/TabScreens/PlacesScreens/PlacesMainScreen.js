@@ -1,8 +1,6 @@
-import { useEffect } from "react";
-import { ScrollView, StyleSheet, View } from "react-native";
 import { useSelector } from "react-redux";
-import Input from "../../../components/Input.js";
-import ScrollPlaces from "../../../components/ScrollPlaces.js";
+import { ScrollView, StyleSheet, View } from "react-native";
+import { ScrollPlaces, Input } from "../../../components/index.js";
 
 const parsedLoaction = {
   country: "Ukraine",

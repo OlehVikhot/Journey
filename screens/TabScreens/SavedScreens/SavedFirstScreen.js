@@ -1,11 +1,8 @@
 import { StyleSheet, View } from "react-native";
-import InfoComponent from "../../../components/InfoComponent";
-import PrimaryButton from "../../../components/PrimaryButton";
-import TextInter from "../../../components/TextInter";
-
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { PrimaryButton, TextInter, InfoComponent } from "../../../components";
 
 export default function SavedFirstScreen({ navigation }) {
   return (
@@ -15,15 +12,15 @@ export default function SavedFirstScreen({ navigation }) {
         <InfoComponent
           text={"Save intresting places and restaurants you'd like to visit"}
         >
-          <Feather name="map-pin" size={24} color="white" />
+          <Feather name='map-pin' size={24} color='white' />
         </InfoComponent>
         <InfoComponent
           text={"Save entire information about country you'd like to visit"}
         >
-          <AntDesign name="hearto" size={24} color="white" />
+          <AntDesign name='hearto' size={24} color='white' />
         </InfoComponent>
         <InfoComponent text={"Create your trip and share with friends"}>
-          <MaterialCommunityIcons name="pen" size={24} color="white" />
+          <MaterialCommunityIcons name='pen' size={24} color='white' />
         </InfoComponent>
       </View>
 

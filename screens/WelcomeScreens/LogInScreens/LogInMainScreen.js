@@ -1,16 +1,15 @@
 import { useState } from "react";
-import { Alert, StyleSheet, Text, View } from "react-native";
-
 import { useDispatch } from "react-redux";
+import { Alert, StyleSheet, View } from "react-native";
 import { authenticate, register } from "../../../store/authSlice";
-
+import {
+  Input,
+  PrimaryButton,
+  SecondaryButton,
+  TextButton,
+  TextInter,
+} from "../../../components";
 import { loginUser, createUser } from "../../../util/authentification";
-
-import Input from "../../../components/Input";
-import PrimaryButton from "../../../components/PrimaryButton";
-import SecondaryButton from "../../../components/SecondaryButton";
-import TextButton from "../../../components/TextButton";
-import TextInter from "../../../components/TextInter";
 
 export default function LogInMainScreen({ navigation }) {
   const dispatch = useDispatch();

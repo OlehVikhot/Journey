@@ -1,13 +1,14 @@
-import { ScrollView, StyleSheet, Text, View } from "react-native";
-import PrimaryButton from "../../../components/PrimaryButton";
-import SavedTrip from "../../../components/SavedTrip";
-import TextTitle from "../../../components/TextTitle";
-import ViewContainer from "../../../components/ViewContainer";
 import { useSelector } from "react-redux";
+import { ScrollView, StyleSheet } from "react-native";
+import {
+  SavedTrip,
+  ViewContainer,
+  TextTitle,
+  PrimaryButton,
+} from "../../../components";
 
 export default function SavedListScreen({ navigation }) {
   const tripList = useSelector((state) => state.saved.savedLists);
-  console.log(tripList);
 
   return (
     <ViewContainer style={styles.mainContainer}>

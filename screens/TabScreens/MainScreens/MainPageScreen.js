@@ -1,19 +1,9 @@
 import { useEffect, useState } from "react";
-import {
-  Image,
-  StyleSheet,
-  View,
-  Dimensions,
-  Alert,
-  Pressable,
-} from "react-native";
 import { useSelector } from "react-redux";
-
-import Input from "../../../components/Input";
-import PrimaryButton from "../../../components/PrimaryButton";
-import TextInter from "../../../components/TextInter";
-import { Colors } from "../../../constants/colors";
+import { Image, StyleSheet, View, Dimensions, Pressable } from "react-native";
+import { Input, PrimaryButton, TextInter } from "../../../components";
 import { getCountryName, getMapPreview } from "../../../util/location";
+import { colors } from "../../../constants/colors";
 
 const { width } = Dimensions.get("window") - 23;
 const { height } = Dimensions.get("window");
@@ -133,7 +123,7 @@ export default function MainScreen({ navigation, route }) {
         <View>
           <Image
             style={styles.profileImage}
-            source={require(`../../../img/starting1.png`)}
+            source={require(`../../../assets/images/starting1.png`)}
           />
         </View>
       </View>
@@ -177,7 +167,7 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontSize: 28,
-    color: Colors.purple1,
+    color: colors.purple1,
     fontFamily: "Inter_700Bold",
   },
   underTitleText: {

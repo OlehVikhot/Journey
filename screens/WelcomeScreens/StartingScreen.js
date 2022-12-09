@@ -1,10 +1,7 @@
 import { useRef, useState } from "react";
 import { Image, ScrollView, StyleSheet, View, Dimensions } from "react-native";
-
-import TextInter from "../../components/TextInter";
-import PrimaryButton from "../../components/PrimaryButton";
-import TextButton from "../../components/TextButton";
-import { Colors } from "../../constants/colors";
+import { PrimaryButton, TextButton, TextInter } from "../../components";
+import { colors } from "../../constants/colors";
 
 const infoObj = [
   {
@@ -12,21 +9,21 @@ const infoObj = [
     header: "Travel around \nthe world",
     description:
       "The whole woels in one application. Make \nyour planning enjoyfull.",
-    imgPath: require(`../../img/starting1.png`),
+    imgPath: require(`../../assets/images/starting1.png`),
   },
   {
     key: 2,
     header: "Find new \nintresting places",
     description:
       "This is a new level of impressions and \ndiscoveries for you and your friends.",
-    imgPath: require(`../../img/starting2.png`),
+    imgPath: require(`../../assets/images/starting2.png`),
   },
   {
     key: 3,
     header: "Discover entire \ninformation",
     description:
       "Don'r worry about searchinf information. You \ncan find it easily here.",
-    imgPath: require(`../../img/starting3.png`),
+    imgPath: require(`../../assets/images/starting3.png`),
   },
 ];
 
@@ -41,8 +38,6 @@ export default function StartingScreen({ navigation }) {
   }
 
   function onSlideHandler(nativeEvent) {
-    console.log(nativeEvent);
-
     const slide = Math.ceil(
       nativeEvent.contentOffset.x / nativeEvent.layoutMeasurement.width
     );
@@ -166,12 +161,12 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   dot: {
-    color: Colors.primaryOrange,
+    color: colors.primaryOrange,
     fontSize: 12,
     spaceBetween: 10,
   },
   dotInactive: {
-    color: Colors.disabledOrange,
+    color: colors.disabledOrange,
     fontSize: 8,
   },
 });

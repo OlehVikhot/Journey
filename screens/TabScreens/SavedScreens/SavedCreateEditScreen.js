@@ -1,11 +1,8 @@
 import { useState } from "react";
-import { Image, StyleSheet, Text, TextInput, View } from "react-native";
-import Input from "../../../components/Input";
-import PrimaryButton from "../../../components/PrimaryButton";
-import TextInter from "../../../components/TextInter";
-import TextTitle from "../../../components/TextTitle";
 import { useDispatch } from "react-redux";
+import { StyleSheet, View } from "react-native";
 import { addTrip } from "../../../store/savedSlice";
+import { Input, PrimaryButton, TextTitle } from "../../../components";
 
 export default function SavedCreateEditScreen({ navigation }) {
   const dispatch = useDispatch();

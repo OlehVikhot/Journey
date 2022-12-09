@@ -1,7 +1,6 @@
-import { Image, ScrollView, StyleSheet, View } from "react-native";
-import PlaceList from "../../../components/PlaceList";
-import TextInter from "../../../components/TextInter";
 import { useSelector } from "react-redux";
+import { Image, ScrollView, StyleSheet, View } from "react-native";
+import { PlaceList, TextInter } from "../../../components";
 
 function SavedListAuthor({ image, author, items }) {
   return (

@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
-import { Alert, ScrollView, StyleSheet, View } from "react-native";
-import CitySearchItem from "../../../components/CitySearchItem";
-import Input from "../../../components/Input";
-import PrimaryButton from "../../../components/PrimaryButton";
 import { useSelector } from "react-redux";
+import { Alert, ScrollView, StyleSheet, View } from "react-native";
+import { CitySearchItem, Input, PrimaryButton } from "../../../components";
 
 export default function MainSearchScreen({ navigation, route }) {
   const [activeInput, setActiveInput] = useState(1);
@@ -12,7 +10,6 @@ export default function MainSearchScreen({ navigation, route }) {
   const [countryTwoFilter, setCountryTwoFilter] = useState(null);
 
   let firstCountry = route.params.startCountry ? route.params.startCountry : "";
-  console.log(route.params);
   let secondCountry = route.params.selectedCountry
     ? route.params.selectedCountry
     : "";

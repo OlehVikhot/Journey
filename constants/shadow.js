@@ -1,4 +1,4 @@
-export const Shadow = {
+export const shadow = {
   backgroundColor: "white",
   shadowColor: "black",
   shadowOffset: {

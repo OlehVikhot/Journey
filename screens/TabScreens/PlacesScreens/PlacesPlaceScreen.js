@@ -1,22 +1,22 @@
+import { useEffect } from "react";
 import {
   Image,
   Pressable,
   ScrollView,
   StyleSheet,
-  Text,
   View,
   Dimensions,
 } from "react-native";
-import Heart from "../../../components/Heart";
-import ImagesCounter from "../../../components/ImagesCounter";
-import ImagesSlider from "../../../components/ImagesSlider";
-import Rating from "../../../components/Rating";
-import TextButton from "../../../components/TextButton";
-import TextInter from "../../../components/TextInter";
 import { Entypo } from "@expo/vector-icons";
-import ForumSection from "../../../components/ForumSection";
-import ScrollPlaces from "../../../components/ScrollPlaces";
-import { useEffect } from "react";
+import {
+  ForumSection,
+  Heart,
+  ImagesCounter,
+  ImagesSlider,
+  Rating,
+  TextButton,
+  TextInter,
+} from "../../../components";
 
 const { width } = Dimensions.get("window");
 const height = width / 2;
@@ -69,7 +69,7 @@ export default function PlacesPlaceScreen({ navigation, route }) {
             <TextInter style={styles.openText}>Open now</TextInter>
             <TextInter style={styles.openHours}>10:00 AM - 6:00 AM</TextInter>
           </View>
-          <Entypo name="chevron-right" size={24} color="black" />
+          <Entypo name='chevron-right' size={24} color='black' />
         </Pressable>
         <View style={styles.aboutContainer}>
           <TextInter style={styles.aboutText}>About</TextInter>
@@ -94,7 +94,10 @@ export default function PlacesPlaceScreen({ navigation, route }) {
         </View>
       </View>
       <View style={styles.mapContainer}>
-        <Image source={require("../../../img/map2.png")} style={styles.map} />
+        <Image
+          source={require("../../../assets/images/map2.png")}
+          style={styles.map}
+        />
       </View>
       <View style={styles.additionalInfoContainer}>
         <View>

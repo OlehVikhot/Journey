@@ -1,16 +1,17 @@
 import { useEffect, useState } from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
-
-import ForumSection from "../../../components/ForumSection";
-import Heart from "../../../components/Heart";
-import ImagesCounter from "../../../components/ImagesCounter";
-import ImagesSlider from "../../../components/ImagesSlider";
-import PlaceButton from "../../../components/PlaceButton";
-import PrimaryButton from "../../../components/PrimaryButton";
-import PlaceList from "../../../components/PlaceList";
-import TextButton from "../../../components/TextButton";
-import TextInter from "../../../components/TextInter";
 import { useSelector } from "react-redux";
+import { ScrollView, StyleSheet, View } from "react-native";
+import {
+  ForumSection,
+  Heart,
+  ImagesCounter,
+  ImagesSlider,
+  PlaceButton,
+  PrimaryButton,
+  PlaceList,
+  TextButton,
+  TextInter,
+} from "../../../components";
 
 export default function PlacesCityScreen({ navigation, route }) {
   const [activeScreen, setActiveScreen] = useState(0);

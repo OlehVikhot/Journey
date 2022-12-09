@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
-import { Pressable, StyleSheet, Text, View } from "react-native";
 import { useSelector } from "react-redux";
-import PrimaryButton from "../../../components/PrimaryButton";
-import StackView from "../../../components/StackView";
-import TextInter from "../../../components/TextInter";
-import { Colors } from "../../../constants/colors";
+import { Pressable, StyleSheet, View } from "react-native";
+import { StackView, PrimaryButton, TextInter } from "../../../components";
+import { colors } from "../../../constants/colors";
 
 export default function MainTripInfoScreen({ navigation, route }) {
   const DATA = useSelector((state) => state.saved.parsedData);
@@ -102,11 +100,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingBottom: 2,
     borderBottomWidth: 1,
-    borderBottomColor: Colors.gray4,
+    borderBottomColor: colors.gray4,
   },
   activeTopButton: {
     borderBottomWidth: 2,
-    borderBottomColor: Colors.purple1,
+    borderBottomColor: colors.purple1,
   },
   infoContainer: {
     marginTop: 24,

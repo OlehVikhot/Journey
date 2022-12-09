@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { useSelector } from "react-redux";
-import CitySearchItem from "../../../components/CitySearchItem";
-import Input from "../../../components/Input";
+import { ScrollView, StyleSheet, View } from "react-native";
+import { CitySearchItem, Input } from "../../../components";
 
 export default function PlacesSearchScreen({ navigation }) {
   const [cityFilter, setCityFilter] = useState("");

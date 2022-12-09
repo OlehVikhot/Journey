@@ -1,15 +1,10 @@
-import { StyleSheet, Text, View } from "react-native";
-import ProfileComponent from "../../../components/ProfileComponent";
-import TextTitle from "../../../components/TextTitle";
-
-import { Ionicons } from "@expo/vector-icons";
+import { StyleSheet, View } from "react-native";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-
-import TextButton from "../../../components/TextButton";
+import { ProfileComponent, TextTitle, TextButton } from "../../../components";
 
 export default function ProfileMainScreen({ navigation }) {
   return (
@@ -20,21 +15,21 @@ export default function ProfileMainScreen({ navigation }) {
       <TextTitle style={styles.titles}>Account Setting</TextTitle>
       <ProfileComponent
         text={"Notification"}
-        icon={<Entypo name="notification" size={24} color="black" />}
+        icon={<Entypo name='notification' size={24} color='black' />}
       />
       <ProfileComponent
         text={"Privacy and sharing"}
-        icon={<Feather name="lock" size={24} color="black" />}
+        icon={<Feather name='lock' size={24} color='black' />}
       />
 
       <TextTitle style={styles.titles}>Support</TextTitle>
       <ProfileComponent
         text={"How Journey works"}
-        icon={<AntDesign name="questioncircleo" size={24} color="black" />}
+        icon={<AntDesign name='questioncircleo' size={24} color='black' />}
       />
       <ProfileComponent
         text={"Get Help"}
-        icon={<MaterialIcons name="headset-mic" size={24} color="black" />}
+        icon={<MaterialIcons name='headset-mic' size={24} color='black' />}
       />
 
       <TextTitle style={styles.titles}>Legal</TextTitle>
@@ -42,9 +37,9 @@ export default function ProfileMainScreen({ navigation }) {
         text={"Term of service"}
         icon={
           <MaterialCommunityIcons
-            name="file-document-multiple-outline"
+            name='file-document-multiple-outline'
             size={24}
-            color="black"
+            color='black'
           />
         }
       />
@@ -52,9 +47,9 @@ export default function ProfileMainScreen({ navigation }) {
         text={"Privacy Policy"}
         icon={
           <MaterialCommunityIcons
-            name="file-document-multiple"
+            name='file-document-multiple'
             size={24}
-            color="black"
+            color='black'
           />
         }
       />
